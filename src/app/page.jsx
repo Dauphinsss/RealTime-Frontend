@@ -77,7 +77,7 @@ export default function ChatPage() {
             <CardTitle className="text-lg">Chat en tiempo real</CardTitle>
           </CardHeader>
           <CardContent>
-            <Card className="pl-2 h-96 overflow-y-hidden scroll-smooth">
+            <Card className="pl-2 h-96 overflow-y-scroll scroll-smooth">
               {messages.map((msg, index) => (
                 <p key={index}>
                   <strong>{msg.name}:</strong> {msg.message}
